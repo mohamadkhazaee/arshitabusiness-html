@@ -1,0 +1,324 @@
+.hide-header{
+    transform: translateY(-100%);
+}
+header{
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: $pdark;
+    position: fixed;
+    transition: all ease-in-out .4s;
+    z-index: 100 !important;
+
+    .top-header{
+        border-bottom: 1px solid rgba(150,150,150, .2);
+        padding: 8px 0;
+       // width: 100%;
+        height: 45px;
+        .top-header-info{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            .top-header-info-item{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin-left: 15px;
+                span{
+                    display: flex;
+                    height: 30px;
+                    justify-content: center;
+                    align-items: center;
+                    color: #ccc;
+                    font-size: 10px;
+                    font-weight: bold;
+                    transition: all ease-in-out .4s;
+
+                 //   font-family: 'IRANyekan';
+                }
+                i{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 30px;
+                    height: 30px;
+                    font-size: 20px;
+                    color: $golden;
+                    transition: all ease-in-out .3s;
+                }
+                &:hover{
+                    span{
+                        color: $golden;
+                    }
+                    i{
+                        color: #fff;
+                        font-size: 22px;
+                    }
+                }
+                
+            }
+        }
+        .top-header-social{
+            display: flex;
+            width: 100%;
+            direction: ltr !important;
+            text-align: left !important;
+            a{
+                i{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 30px;
+                    height: 30px;
+                    font-size: 20px;
+                    color: $golden;
+                    background-color: #fff;
+                    margin-right: 10px;
+                    transition: all ease-in-out .3s;
+                }
+                &:hover i{
+                    background-color: $golden;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .main-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 55px;
+        background-color: $pdark;
+        .main-header-right{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            .main-header-logo{
+                display: block;
+                margin: 0 auto !important;
+                img{
+                    max-width: 100px;
+                    max-height: 50px;
+                    margin: 0 auto;
+                }
+            }
+            .main-header-menu{
+                .main-header-menu-top{
+                    display: none;
+                }
+                background-color: $pdark;
+                transition: all ease-in-out .4s;
+               ul{
+                display: flex;
+                justify-content: flex-start ;
+                align-items: center;
+                margin-bottom: 0 !important;
+                margin-right: 20px;
+                li{
+                    a{
+                        color: #fff;
+                        font-family: 'IRANyekan';
+                        margin-left:20px;
+                        transition: all ease-in-out .4s;
+                        &:hover{
+                            color: $golden;
+                        }
+                    }
+                }
+               }
+            }
+            
+        }
+        .main-header-btns{
+            display: flex;
+            direction: ltr !important;
+            text-align: left !important;
+            .res-btn-toggle{
+                display: none;
+                i{
+                    color: #fff;
+                    width: 30px;
+                    height: 30px;
+                    font-size: 25px;
+                    transition: all ease-in-out .4s;
+                    &:hover{
+                        color: $golden;
+                    }
+                }
+            }
+            .main-header-search{
+                margin-left: 10px;
+                
+                i{
+                    color: #fff;
+                    width: 30px;
+                    height: 30px;
+                    font-size: 20px;
+                    transition: all ease-in-out .4s;
+                    &:hover{
+                        color: $golden;
+                    }
+                }
+            }
+            .search-popup-open{
+                transform: translateY(0) !important;
+            }
+            .search-popup{
+                transform: translateY(-110%);
+                position: fixed;
+                overflow: hidden !important;
+                width: 100vw !important;
+                height: 100vh !important;
+                top: 0;
+                left: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start !important;
+                background-color: rgba(255,255,255,.9);
+                z-index: 100000000001 !important;
+                transition: all ease-in-out .4s;
+                .search-popup-close{
+                    width: 100%;
+                    height: 20%;
+                    direction: ltr !important;
+                    text-align: left !important;
+                    padding: 15px;
+                    button{
+                        width: 40px;
+                        height: 40px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-end;
+                        i{
+                            width: 100%;
+                            height: 100%;
+                            background-color: $golden;
+                            color: #fff;
+                            font-size: 25px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            transition: all ease-in-out .4s;
+                            border: 1px solid $golden;
+                            &:hover{
+                                color: $golden;
+                                background-color: #fff;
+                            }
+                        }
+                    }
+                }
+                .search-form{
+                    width: 100% !important;
+                    height: 70% !important;
+                    display: flex !important;
+                    justify-content: center !important;
+                    align-items: center !important;
+                    .seach-box-container{
+                        width: 300px;
+                        height: 40px;
+                        position: relative;
+                        input{
+                            width: 100%;
+                            height: 100%;
+                            border: 1px solid $golden;
+                            padding: 0 15px;
+                            font-size: 12px;
+                            font-family: 'IRANyekan';
+                        }
+                        button{
+                            background-color: $golden;
+                            display: flex;
+                            justify-content: center;
+                            top: 0;
+                            left: 0;
+                            align-items: center;
+                            height: 100%;
+                            width: 50px;
+                            position: absolute;
+                            border: 1px solid $golden;
+                            transition: all ease-in-out .4s;
+                            &:hover{
+                                background-color: #fff;
+                                i{
+                                    color: $golden !important;
+                                }
+                            }
+                            i{
+                                color: #fff;
+                                font-size: 25px;
+                                transition: all ease-in-out .4s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media screen and(max-width:991px){
+    header{
+        .top-header{
+            display: none;
+        }
+       .main-header{
+           .main-header-btns{
+               .res-btn-toggle{
+                display: block;
+               }
+           }
+           .main-header-right{
+               .main-header-menu{
+                   position: fixed !important;
+                   width: 100vw;
+                   height: 100vh;
+                   top: 0;
+                   right: 0;
+                   flex-direction: column !important;
+                   transform: translateY(-210%);
+                   .main-header-menu-top{
+                    display: flex;
+                    flex-direction: column;
+                    .main-header-menu-btn-toggle{
+                        direction: ltr !important;
+                        padding: 15px;
+                        text-align: left !important;
+                        button{
+                            i{
+                                color: #fff;
+                                font-size: 25px;
+                            }
+                        }
+                    }
+                    img{
+                        width: 250px;
+                        height: auto;
+                        max-height: 150px;
+                        margin: 15px auto ;
+                        margin-top: 0 !important;
+                    }
+                }
+                   ul{
+                       flex-direction: column !important;
+                       background-color: transparent !important;
+                       li{
+                           a{
+                               display: block;
+                               font-size: 15px;
+                               margin-bottom: 15px;
+                           }
+                       }
+                   }
+               }
+               .main-header-menu-toggle{
+                   transform: translateY(0) !important;
+               }
+           }
+       }
+    }
+}
