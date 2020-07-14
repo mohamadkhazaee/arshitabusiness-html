@@ -1,0 +1,212 @@
+@keyframes sliderAnimation{
+    from{
+        background-color: red;
+    }
+    to{
+        background-color: blueviolet;
+    }
+}
+
+.main-slider{
+    margin-top: 100px;
+    z-index: 0 !important;
+    .main-owl{
+        z-index: 0 !important;
+        .owl-dots{
+            display: flex !important;
+            align-items: center !important;
+            width: 100% !important;
+            height: 0px !important;
+            position: absolute !important;
+            bottom: 10%;
+            left: 0;
+            justify-content: center !important;
+            button{
+                span{
+                    width: 30px;
+                    height: 10px;
+                    border-radius: 0 !important;
+                }
+            }
+            .active{
+                span{
+                    background-color: $golden !important;
+                }
+            }
+        }
+        .owl-nav{
+            display: flex !important;
+            align-items: center !important;
+            width: 100% !important;
+            height: 0px !important;
+            position: absolute !important;
+            bottom: 30%;
+            left: 0;
+            justify-content: space-between !important;
+        }
+        .item{
+            z-index: 0 !important;
+
+            .slider-item{
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 100%;
+                    
+                }
+                .slider-content{
+                    width: 100%;
+                    position: absolute;
+                    width: auto;
+                    z-index: 99;
+                    padding: 20px 30px;
+                    background-color: rgba(00, 00, 00, 0.5);
+                //   /  bottom: 50%;
+                    //right: 10%;
+                   // animation-name: sliderAnimation;
+                    animation-duration: 4s;
+                    animation-delay: 2s;
+                    animation-iteration-count: infinite;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    h3{
+                        font-family: 'Aviny';
+                        width: 100%;
+                        text-align: center;
+                        color: $golden;
+                        font-size: 50px;
+                        text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+                        text-align: center !important;
+
+                    }
+                    span{
+                        color: #fff;
+                        font-family: 'IRSans';
+                        font-weight: bold;
+                        font-size: 20px;
+                        text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+                        display: block;
+                        max-width: 600px;
+                        text-align: justify;
+                        line-height: 30px;
+
+                    }
+                    a{
+                        padding: 8px 16px;
+                        font-weight: bold;
+                        background-color: $golden;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-family: 'IRANyekan';
+                        font-size: 14px;
+                        color: #fff;
+                        margin: 10px 0;
+                        position: relative;
+                        transition: all ease-in-out .4s;
+                        overflow: hidden;
+                        &::after{
+                            content: '';
+                            position: absolute;
+                            top: -250%;
+                            left: -300%;
+                            width: 200%;
+                            height: 500%;
+                            background-color: rgba(00, 00, 00, 0.5);
+                            transform: rotate(25deg);
+                            transition: all ease-in-out .4s;
+
+                        }
+                        &:hover{
+                            &::after{
+                                left: -80%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:991px){
+    .main-slider{
+        margin-top: 55px !important;
+        .main-owl{
+            .item{
+                .slider-item{
+                    img{
+                        max-height: 550px !important;
+                    }
+                    .slider-content{
+                        span{
+                            font-size: 15px;
+                        }
+                        h3{
+                            font-size: 30px;
+                        }
+                        a{
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:991px){
+    .main-slider{
+        .main-owl{
+            .item{
+                .slider-item{
+                    img{
+                        max-height: 550px;
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:1550px){
+    .main-slider{
+        .main-owl{
+            .item{
+                .slider-item{
+                    img{
+                        max-height: 750px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:700px){
+    .main-slider{
+        margin-top: 55px !important;
+        .main-owl{
+            .item{
+                .slider-item{
+                    img{
+                        max-height: 550px;
+                    }
+                    .slider-content{
+                        span{
+                            font-size: 12px;
+                        }
+                        h3{
+                            font-size: 18px;
+                            text-align: center !important;
+                        }
+                        a{
+                            font-size: 12px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
