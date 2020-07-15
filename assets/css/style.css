@@ -176,7 +176,7 @@ header {
           margin-right: 20px; }
           header .main-header .main-header-right .main-header-menu ul li a {
             color: #fff;
-            font-family: 'IRANyekan';
+            font-family: 'IRSans';
             margin-left: 20px;
             transition: all ease-in-out .4s; }
             header .main-header .main-header-right .main-header-menu ul li a:hover {
@@ -404,7 +404,7 @@ header {
             text-align: justify;
             line-height: 30px; }
           .main-slider .main-owl .item .slider-item .slider-content a {
-            padding: 8px 16px;
+            padding: 12px 20px;
             font-weight: bold;
             background-color: #D4AF37;
             display: flex;
@@ -424,7 +424,7 @@ header {
               left: -300%;
               width: 200%;
               height: 500%;
-              background-color: rgba(0, 0, 0, 0.5);
+              background-color: rgba(0, 0, 0, 0.3);
               transform: rotate(25deg);
               transition: all ease-in-out .4s; }
             .main-slider .main-owl .item .slider-item .slider-content a:hover::after {
@@ -438,7 +438,33 @@ header {
     .main-slider .main-owl .item .slider-item .slider-content span {
       font-size: 15px; }
     .main-slider .main-owl .item .slider-item .slider-content h3 {
-      font-size: 30px; } }
+      font-size: 30px; }
+    .main-slider .main-owl .item .slider-item .slider-content a {
+      padding: 12px 20px;
+      font-weight: bold;
+      background-color: #D4AF37;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'IRANyekan';
+      font-size: 14px;
+      color: #fff;
+      margin: 10px 0;
+      position: relative;
+      transition: all ease-in-out .4s;
+      overflow: hidden; }
+      .main-slider .main-owl .item .slider-item .slider-content a::after {
+        content: '';
+        position: absolute;
+        top: -250%;
+        left: -300%;
+        width: 200%;
+        height: 500%;
+        background-color: rgba(0, 0, 0, 0.3);
+        transform: rotate(25deg);
+        transition: all ease-in-out .4s; }
+      .main-slider .main-owl .item .slider-item .slider-content a:hover::after {
+        left: -80%; } }
 
 @media screen and (min-width: 991px) {
   .main-slider .main-owl .item .slider-item img {
@@ -460,6 +486,192 @@ header {
       text-align: center !important; }
     .main-slider .main-owl .item .slider-item .slider-content a {
       font-size: 12px !important; } }
+
+@keyframes rotate {
+  0% {
+    transform: rotate(-3deg); }
+  50% {
+    transform: rotate(3deg); }
+  100% {
+    transform: rotate(-3deg); } }
+
+.index-about {
+  padding: 55px 0;
+  overflow: hidden; }
+  .index-about .about-index-img {
+    width: 100%; }
+    .index-about .about-index-img img {
+      width: 100%;
+      max-width: 400px;
+      max-height: 350px;
+      margin: 0 auto !important;
+      display: block;
+      animation-name: rotate;
+      animation-duration: 3s;
+      animation-iteration-count: infinite; }
+  .index-about .index-about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; }
+    .index-about .index-about-content span {
+      color: #D4AF37;
+      font-family: 'Aviny';
+      font-size: 35px;
+      text-shadow: 1px 1px 1px #D4AF37;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; }
+      .index-about .index-about-content span::before {
+        content: '\F14DE';
+        font-family: 'Material Icons';
+        display: flex;
+        width: 30px;
+        height: 30px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 15px; }
+    .index-about .index-about-content h3 {
+      font-family: 'IRANYekan';
+      color: #555;
+      font-weight: bold;
+      margin: 15px 0;
+      font-size: 25px; }
+    .index-about .index-about-content p {
+      color: #333;
+      line-height: 27px;
+      width: 100%;
+      text-align: justify !important;
+      font-size: 16px; }
+    .index-about .index-about-content ul li {
+      font-family: 'IRANYekan';
+      font-size: 15px;
+      color: #555;
+      margin-bottom: 12px;
+      display: flex; }
+      .index-about .index-about-content ul li::before {
+        font-family: 'Material Icons';
+        content: '\F0AE2';
+        display: flex;
+        width: 25px;
+        height: 25px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 15px;
+        color: #D4AF37;
+        font-size: 20px; }
+    .index-about .index-about-content .see-more {
+      padding: 12px 20px;
+      font-weight: bold;
+      background-color: #D4AF37;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'IRANyekan';
+      font-size: 14px;
+      color: #fff;
+      margin: 10px 0;
+      position: relative;
+      transition: all ease-in-out .4s;
+      overflow: hidden; }
+      .index-about .index-about-content .see-more::after {
+        content: '';
+        position: absolute;
+        top: -250%;
+        left: -300%;
+        width: 200%;
+        height: 500%;
+        background-color: rgba(0, 0, 0, 0.3);
+        transform: rotate(25deg);
+        transition: all ease-in-out .4s; }
+      .index-about .index-about-content .see-more:hover::after {
+        left: -80%; }
+
+.index-services {
+  width: 100%;
+  background-color: #3f4441;
+  padding: 55px 0;
+  overflow: hidden; }
+  .index-services .section-header {
+    color: #D4AF37;
+    font-family: 'Aviny';
+    font-size: 45px;
+    text-shadow: 1px 1px 1px #D4AF37;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; }
+  .index-services .section-header-span {
+    font-family: 'IRSans';
+    color: #ccc;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px; }
+  .index-services a .service-item {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #fff;
+    transition: all ease-in-out .4s;
+    margin-bottom: 20px;
+    min-height: 150px;
+    padding-top: 25px; }
+    .index-services a .service-item:hover {
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+      transform: translateY(-10px); }
+    .index-services a .service-item .item-img {
+      padding: 0 15px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; }
+      .index-services a .service-item .item-img img {
+        width: 80px;
+        height: 80px; }
+    .index-services a .service-item .item-content {
+      padding: 0 15px; }
+      .index-services a .service-item .item-content .item-title {
+        font-family: 'IRANYekan';
+        font-weight: bold;
+        color: #444;
+        font-size: 16px;
+        margin-bottom: 15px; }
+      .index-services a .service-item .item-content .item-summary {
+        font-size: 14px;
+        color: #333;
+        text-align: justify !important; }
+  .index-services .see-more {
+    padding: 12px 20px;
+    font-weight: bold;
+    background-color: #D4AF37;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'IRANyekan';
+    font-size: 14px;
+    color: #fff;
+    margin: 10px 0;
+    position: relative;
+    transition: all ease-in-out .4s;
+    overflow: hidden;
+    margin: 25px auto;
+    height: auto;
+    max-width: 180px; }
+    .index-services .see-more::after {
+      content: '';
+      position: absolute;
+      top: -250%;
+      left: -300%;
+      width: 200%;
+      height: 500%;
+      background-color: rgba(0, 0, 0, 0.3);
+      transform: rotate(25deg);
+      transition: all ease-in-out .4s; }
+    .index-services .see-more:hover::after {
+      left: -80%; }
 
 p {
   font-family: 'IRSans' !important; }

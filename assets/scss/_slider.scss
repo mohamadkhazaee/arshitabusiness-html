@@ -96,36 +96,7 @@
 
                     }
                     a{
-                        padding: 8px 16px;
-                        font-weight: bold;
-                        background-color: $golden;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        font-family: 'IRANyekan';
-                        font-size: 14px;
-                        color: #fff;
-                        margin: 10px 0;
-                        position: relative;
-                        transition: all ease-in-out .4s;
-                        overflow: hidden;
-                        &::after{
-                            content: '';
-                            position: absolute;
-                            top: -250%;
-                            left: -300%;
-                            width: 200%;
-                            height: 500%;
-                            background-color: rgba(00, 00, 00, 0.5);
-                            transform: rotate(25deg);
-                            transition: all ease-in-out .4s;
-
-                        }
-                        &:hover{
-                            &::after{
-                                left: -80%;
-                            }
-                        }
+                      @include mybtn
                     }
                 }
             }
@@ -149,7 +120,7 @@
                             font-size: 30px;
                         }
                         a{
-                            
+                            @include mybtn;
                         }
                     }
                 }

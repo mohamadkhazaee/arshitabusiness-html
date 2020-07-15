@@ -1,0 +1,74 @@
+.index-services{
+    width: 100%;
+    background-color: $pdark;    
+    padding: 55px 0;
+    overflow: hidden;
+    .section-header{
+        color: $golden;
+            font-family: 'Aviny';
+            font-size: 45px;
+            text-shadow: 1px 1px 1px $golden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+    }
+    .section-header-span{
+        font-family: 'IRSans';
+        color: #ccc;
+        font-size: 13px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    a{
+        .service-item{
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            background-color: #fff;
+            transition: all ease-in-out .4s;
+            margin-bottom: 20px;
+            min-height: 150px;
+            padding-top: 25px;
+            &:hover{
+                box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+                transform: translateY(-10px);
+            }
+            .item-img{
+                padding:0 15px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                img{
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+            .item-content{
+                padding:0 15px;
+                .item-title{
+                    font-family: 'IRANYekan';
+                    font-weight: bold;
+                    color: #444;
+                    font-size: 16px;
+                    margin-bottom: 15px;
+                }
+                .item-summary{
+                    font-size: 14px;
+                    color: #333;
+                    text-align: justify !important;
+                }
+            }
+        }
+    }
+    .see-more{
+        @include mybtn;
+        margin: 25px auto;
+        height: auto;
+        max-width: 180px;
+    }
+}

@@ -1,0 +1,97 @@
+@keyframes rotate{
+    0%{
+        transform: rotate(-3deg);
+    }
+
+    50%{
+        transform: rotate(3deg);
+    }
+    100%{
+        transform: rotate(-3deg);
+    }
+}
+
+.index-about{
+    padding: 55px 0;
+    overflow: hidden;
+    .about-index-img{
+        width: 100%;
+        img{
+            width: 100%;
+            max-width: 400px;
+            max-height: 350px;
+            margin: 0 auto !important;
+            display: block;
+            animation-name: rotate;
+            animation-duration: 3s;
+          //  animation-delay: 2s;
+            animation-iteration-count: infinite;
+        }
+    }
+    .index-about-content{
+       
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: flex-start;
+        span{
+            color: $golden;
+            font-family: 'Aviny';
+            font-size: 35px;
+            text-shadow: 1px 1px 1px $golden;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            &::before{
+                content: '\F14DE';
+                font-family: 'Material Icons';
+                display: flex;
+                width: 30px;
+                height: 30px;
+                justify-content: center;
+                align-items: center;
+                margin-left: 15px;
+                
+            }
+        }
+        h3{
+            font-family: 'IRANYekan';
+            color: #555;
+            font-weight: bold;
+            margin: 15px 0;
+            font-size: 25px;
+        }
+        p{
+            color: #333;
+            line-height: 27px;
+            width: 100%;
+            text-align: justify !important;
+            font-size: 16px;
+        }
+        ul{
+            li{
+                font-family: 'IRANYekan';
+                font-size: 15px;
+                color: #555;
+                margin-bottom: 12px;
+                display: flex;
+                &::before{
+                    font-family: 'Material Icons';
+
+                    content: '\F0AE2';
+                    display: flex;
+                width: 25px;
+                height: 25px;
+                justify-content: center;
+                align-items: center;
+                margin-left: 15px;
+                color: $golden;
+                font-size: 20px;
+                }
+            }
+        }
+        .see-more{
+            @include mybtn; 
+        }
+    }
+}
