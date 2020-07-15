@@ -31,12 +31,13 @@
             align-items: flex-start;
             background-color: #fff;
             transition: all ease-in-out .4s;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             min-height: 150px;
             padding-top: 25px;
             &:hover{
                 box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
                 transform: translateY(-10px);
+                background-color: #ddd;
             }
             .item-img{
                 padding:0 15px;
