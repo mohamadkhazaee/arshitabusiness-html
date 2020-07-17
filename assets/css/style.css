@@ -86,7 +86,7 @@ header {
   width: 100%;
   top: 0;
   left: 0;
-  background-color: #3f4441;
+  background-color: #1b262c;
   position: fixed;
   transition: all ease-in-out .4s;
   z-index: 100 !important; }
@@ -139,7 +139,7 @@ header {
         height: 30px;
         font-size: 20px;
         color: #D4AF37;
-        background-color: #fff;
+        background-color: transparent;
         margin-right: 10px;
         transition: all ease-in-out .3s; }
       header .top-header .top-header-social a:hover i {
@@ -151,7 +151,7 @@ header {
     align-items: center;
     width: 100%;
     height: 55px;
-    background-color: #3f4441; }
+    background-color: #1b262c; }
     header .main-header .main-header-right {
       display: flex;
       justify-content: flex-start;
@@ -164,7 +164,7 @@ header {
           max-height: 50px;
           margin: 0 auto; }
       header .main-header .main-header-right .main-header-menu {
-        background-color: #3f4441;
+        background-color: #1b262c;
         transition: all ease-in-out .4s; }
         header .main-header .main-header-right .main-header-menu .main-header-menu-top {
           display: none; }
@@ -589,7 +589,7 @@ header {
 
 .index-services {
   width: 100%;
-  background-color: #3f4441;
+  background-color: #1b262c;
   padding: 55px 0;
   overflow: hidden; }
   .index-services .section-header {
@@ -619,7 +619,21 @@ header {
     transition: all ease-in-out .4s;
     margin-bottom: 30px;
     min-height: 150px;
-    padding-top: 25px; }
+    padding-top: 25px;
+    position: relative; }
+    .index-services a .service-item::after {
+      content: '\F0174';
+      font-family: 'Material Icons';
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      font-size: 250px;
+      color: rgba(190, 190, 190, 0.3);
+      position: absolute;
+      top: 0;
+      right: 0; }
     .index-services a .service-item:hover {
       box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
       transform: translateY(-10px);
@@ -674,5 +688,14 @@ header {
     .index-services .see-more:hover::after {
       left: -80%; }
 
-p {
-  font-family: 'IRSans' !important; }
+.index-counter {
+  width: 100%;
+  min-height: 500px;
+  background-image: url("../img/bgcounter.png");
+  display: flex;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed; }
