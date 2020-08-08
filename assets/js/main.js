@@ -41,14 +41,14 @@ $(document).ready(function () {
 
     ////////////////////////////////////////////////////////////////
                     ////main owl slider 
-
-
                     $('.main-owl').owlCarousel({
                         loop:true,
                         margin:10,
                         nav:true,
                         dots:true,
                         rtl:true,
+                        autoplay:true,
+                        autoplayTimeout:5000,
                         responsive:{
                             0:{
                                 items:1
@@ -56,7 +56,31 @@ $(document).ready(function () {
                         }
                     })
 
-               
+///////////////////////////////////////////////////////////////////////
+                    ////blog owl
+                    $('.blog-owl').owlCarousel({
+                        loop:true,
+                        margin:10,
+                        nav:true,
+                        rtl:true,
+                        autoplay:true,
+                        autoplayTimeout:4000,
+                        responsive:{
+                            0:{
+                                items:1
+                            },
+                            700:{
+                                items:2
+                            },
+                            1000:{
+                                items:3
+                            },
+                            1200:{
+                                items:4
+                            }
+                        }
+                    })
+                    
 
 
 

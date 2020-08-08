@@ -1,8 +1,11 @@
 .index-services{
     width: 100%;
     background-color: $pdark;    
-    padding: 55px 0;
+    padding: 85px 0;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .section-header{
         color: $golden;
             font-family: 'Aviny';
@@ -36,14 +39,14 @@
             padding-top: 25px;
             position: relative;
             &::after{
-                content: '\F0174';
+                content: '\F14DE';
                 font-family: 'Material Icons';
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 width: 100%;
                 height: 100%;
-                font-size: 250px;
+                font-size: 120px;
                 color: rgba(190,190,190,.3);
                 position: absolute;
                 top: 0;
@@ -82,7 +85,36 @@
         }
     }
     .see-more{
-        @include mybtn;
+        padding: 12px 20px;
+        font-weight: bold;
+        background-color: $golden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'IRANyekan';
+        font-size: 14px;
+        color: #fff;
+        margin: 10px 0;
+        position: relative;
+        transition: all ease-in-out .4s;
+        overflow: hidden;
+        &::after{
+            content: '';
+            position: absolute;
+            top: -250%;
+            left: -300%;
+            width: 200%;  
+            height: 500%;
+            background-color: rgba(00, 00, 00, 0.3);
+            transform: rotate(25deg);
+            transition: all ease-in-out .4s;
+
+        }
+        &:hover{
+            &::after{
+                left: -80%;
+            }
+        }
         margin: 25px auto;
         height: auto;
         max-width: 180px;

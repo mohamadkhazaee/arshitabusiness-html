@@ -1,0 +1,110 @@
+footer{
+    width: 100%;
+    background-color: $pdark;
+    padding:30px 10px;
+    padding-bottom: 0;
+    .footer-about{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        img{
+            width: auto;
+            max-width: 180px;
+        }
+        p{
+            width: 100%;
+            text-align: justify !important;
+            color: #ddd;
+            font-size: 12px;
+            font-weight: bold;
+        }
+    } 
+    .footer-contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        align-items: flex-start;
+        .footer-contact-row{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+           // flex-wrap: wrap;
+            i{
+                font-size: 25px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                width: 50px;
+                height: auto;
+                color: $golden;
+            }
+            span{
+                color: #ddd;
+                font-size: 12px;
+                font-weight: bold;
+            }
+        }
+    }
+    .footer-menu{
+        width: 100%;
+        ul{
+            padding-right: 0 !important;
+            margin-top: 10px;
+            li{
+                a{
+                    font-size: 13px;
+                    font-weight: bold;
+                    color: #ddd;
+                    margin-bottom: 10px;
+                    transition: all ease-in-out .4s;
+                    &:hover{
+                        color: $golden;
+                    }
+                }
+            }
+        }
+    }
+    .footer-social{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+        h4{
+            font-size: 16px;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #ddd;
+        }
+        .social-icons{
+            width: 100%;
+            margin-top: 15px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 15px;
+                i{
+                    color: $golden;
+                    font-size: 25px;
+
+                }
+            }
+        }
+    }
+    .copyright{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $golden;
+        font-size: 10px;
+    }
+}
